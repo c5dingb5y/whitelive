@@ -50,12 +50,12 @@
 
 	  if (distance < 0) {
 		clearInterval(x);
-		document.getElementById("timelf").innerHTML = "공연이 마감됬습니다";
+		document.getElementById("timelf").innerHTML = "공연이 완료됬습니다";
 	  }
 	}, 0);
 	</script>
 
-  <!--================ Header Menu Area start =================-->
+  <!--================ Header Menu Area start =================
   <header style="font-family:삼겹살300;" class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -100,7 +100,7 @@
         </div>
       </nav>
     </div>
-  </header>
+  </header>-->
   <!--================Header Menu Area =================-->
 
   
@@ -111,7 +111,29 @@
       <p style="font-family:삼겹살300;">2019년 12월 14일, 홍대 라이브 홀 롤러코스터</p>
       <h1 style="font-family:삼겹살300;">하얀눈이 내릴 때</h1>
       <a class="button button-header" href="#"  style="font-family:삼겹살300;">티켓 구매</a>
+	  
     </div>
+	<div >
+	<p style="text-align: center;">
+	<br/>
+	
+	<script>
+	var filter = "win16|win32|win64|mac|macintel";
+	
+	if ( navigator.platform ) {
+		if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+			alert('mobile 접속');
+		}
+		else {
+			alert('pc 접속');
+		}
+	}
+	</script>
+	
+	
+	<img src="img/new/DOWN.png" style="max-height: 50px; width: auto;" alt="" >
+	</p>
+	</div>
   </section>
   <!--================Hero Banner Area End =================-->
 
