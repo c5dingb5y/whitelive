@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+  <meta property="og:image" content="img/preview.png">
+  <meta property="og:title" content="하얀눈 라이브 공식 사이트">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="멋진 굿즈들과 라이브를 보기위한 티켓을 구매하세요!!">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -125,6 +132,15 @@
 	  setTimeout(function() {document.getElementById('W').style.visibility="visible";}, 800);
 	  setTimeout(function() {document.getElementById('E').style.visibility="visible";}, 1200);
 	  setTimeout(function() {document.getElementById('R').style.visibility="visible";}, 1600);
+	  </script>
+	  
+	  <script>
+	  	  $(window).resize(function() {
+		if($(window).width() < 768) {
+		//document.getElementById('Q').style.visibility="hidden";
+		alert("!!!");
+		}
+		});
 	  </script>
 	  
 	  <div class="bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
