@@ -134,18 +134,24 @@
 	  setTimeout(function() {document.getElementById('R').style.visibility="visible";}, 1600);
 	  </script>
 	  
-	  <script>
-	  	  $(window).resize(function() {
-		if($(window).width() < 768) {
-		//document.getElementById('Q').style.visibility="hidden";
-		alert("!!!");
-		}
-		});
-	  </script>
+
 	  
 	  <div class="bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
-      <p id="Q" style="font-family:삼겹살300; visibility:hidden;">2019년 12월 14일, 홍대 라이브 홀 롤러코스터</p>
+      <p id="Q" style="font-family:삼겹살300; visibility:hidden;">2019년 12월 14일 홍대 라이브 홀 롤러코스터</p>
 	  </div>
+	  
+	  	  <script>
+	  var filter = "win16|win32|win64|mac|macintel";
+	  
+	  if ( navigator.platform ) {
+		if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
+			document.getElementById("Q").innerHTML = "2019년 12월 14일<br/>홍대 라이브 홀 롤러코스터"
+		}
+		else { 
+			document.getElementById("Q").innerHTML = "2019년 12월 14일 홍대 라이브 홀 롤러코스터"
+		}
+	}
+	  </script>
 	  
 	  <div class="bounceIn" style="animation-delay: 0.7s; animation-name: jackInTheBox;">
       <h1 id="W" style="font-family:삼겹살300; visibility:hidden;">하얀눈이 내릴 때</h1>
