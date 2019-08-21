@@ -822,7 +822,7 @@ h2.footer-w-title {
   margin-bottom: 0;
 }
 .footer-list > li::before {
-  background: #d1d1d1 none repeat scroll 0 0;
+  background: #d1d1d1;
   border-radius: 50%;
   content: "";
   height: 4px;
@@ -1047,7 +1047,7 @@ h2.footer-w-title {
   text-transform: uppercase;
 }
 .sidebar-title::before {
-  background: #dddddd none repeat scroll 0 0;
+  background: #dddddd;
   bottom: 0;
   content: "";
   height: 1px;
@@ -1076,7 +1076,7 @@ h2.footer-w-title {
 	transition: .3s
 }
 .sidebar-menu a {
-  background: transparent none repeat scroll 0 0;
+  background: transparent;
   color: #555555;
   display: block;
   padding-bottom: 8px;
@@ -1101,10 +1101,10 @@ h2.footer-w-title {
   margin-right: 10px;
 }
 .sidebar-menu li:hover a::before {
-  background: #7fc8aa none repeat scroll 0 0;
+  background: #7fc8aa;
 }
 .widget-shop-by .sidebar-menu li:hover a {
-  background: #F1F1F1 none repeat scroll 0 0;
+  background: #F1F1F1;
 }
 .sidebar-menu li a span.widget-hover{
     transition: .3s;
