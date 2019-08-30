@@ -137,8 +137,8 @@
 	  
 
 	  
-	  <div class="bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
-      <p id="Q" style="font-family:삼겹살300; visibility:hidden;">2019년 12월 14일 홍대 라이브 홀 롤러코스터</p>
+	  <div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
+      <p style="font-family:삼겹살300;">2019년 12월 14일 홍대 라이브 홀 롤러코스터</p>
 	  </div>
 	  
 	  	  <script>
@@ -154,19 +154,23 @@
 	}
 	  </script>
 	  
-	  <div class="bounceIn" style="animation-delay: 0.7s; animation-name: jackInTheBox;">
-      <h1 id="W" style="font-family:삼겹살300; visibility:hidden;">하얀눈이 내릴 때</h1>
+	  <div class="wow bounceIn" style="animation-delay: 0.7s; animation-name: jackInTheBox;">
+      <h1 style="font-family:삼겹살300;">하얀눈이 내릴 때</h1>
 	  </div>
 	  
-	  <div class="bounceIn" style="animation-delay: 1.1s; animation-name: fadeIn;">
-      <a id="E" class="button button-header" a href="https://form.office.naver.com/form/responseView.cmd?formkey=N2FhZWM2YWUtZTZhYi00MDczLTgyMDktNDVlODA1NWM2MmU5" target="_sub"  style="font-family:삼겹살300; visibility:hidden;">티켓 구매</a>
+	  <div class="wow bounceIn" style="animation-delay: 1.1s; animation-name: fadeIn;">
+      <a class="button button-header" a href="https://form.office.naver.com/form/responseView.cmd?formkey=N2FhZWM2YWUtZTZhYi00MDczLTgyMDktNDVlODA1NWM2MmU5" target="_sub"  style="font-family:삼겹살300;">티켓 구매</a>
 	  </div>
 	  
-	  <br/><br/><br/><br/><br/><br/><br/><br/>
-	  
-	  <div class="bounceIn" style="animation-delay: 1.5s; animation-name: bounceInUp;">
-	  <p id="R" style="font-family:삼겹살300; visibility:hidden;">아래로 내려주세요!<br/>▼</p>
+	  <div class="wow bounceIn" style="animation-delay: 1.5s; animation-name: bounceInUp;">
+	  <p id="R" style="font-family:삼겹살300; visibility:hidden; margin-top:10%;">아래로 내려주세요!<br/>▼</p>
+	  	  <script>
+		R = &('#R');
+		console.log(R.offset().top);
+		R.offset({top: 10});
+	  </script>
 	  </div>
+
 	  
     </div>
 	<div >
@@ -230,8 +234,9 @@
             <a class="button button-link" href="#" style="font-family:삼겹살300;">티켓 구매</a> -->
           </div>
         </div>
+	    <div class="wow bounceIn" style="animation-delay: 0.5s; animation-name: fadeIn;">
 		<img src="img/new/poster.png" width="100%" height="auto" style="margin-left:auto; margin-right:auto; margin-top:20px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);">
-
+		
       </div>
     </div>
   </section>
@@ -288,27 +293,37 @@
   <!--================ Schedule section Start =================-->
   <section class="section-margin mb-5 pb-5">
     <div class="container">
-      <div class="section-intro text-center pb-98px">
-	    <div class="wow bounceIn" style="animation-delay: 0.5s; animation-name: fadeIn;">
+      <div class="section-intro text-center ">
+	    <div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
         <p class="section-intro__title" style="font-family:삼겹살300;">「무대 위에서 일어나는 일들」</p>
 		</div>
-		<div class="wow bounceIn" style="animation-delay: 1.0s; animation-name: jackInTheBox;">
+		<div class="wow bounceIn" style="animation-delay: 0.5s; animation-name: jackInTheBox;">
         <h2 class="primary-text" style="font-family:삼겹살300;">공연 순서</h2>
 		</div>
 		<img src="img/home/section-style.png" alt="">
       </div>
+		<div class="wow bounceIn" style="animation-delay: 0.7s; animation-name: fadeIn;">
+			<img id="lineup" src="img/new/lineup.png" width="100%" height="auto" style="margin-left:auto; margin-right:auto; margin-top:40px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);">
+			<div class="container text-center" "="">
+			</br>
+			
+			<script> 
+	
+			function bigger()
+			{
+			var img = document.getElementById("lineup");
+			img.src="img/poster.png";
+			return false;
+			}
 
-      <div class="row">
-	  
-        <div class="col-xl-10 offset-xl-1" >
-          <div class="scheduleTab">
-            <ul class="nav nav-tabs">
-				<div class="wow bounceIn" style="animation-delay: 0.4s; animation-name: fadeIn;">
-					<!--<img src="img/new/라인업.jpg">-->
-				</div>
-            </div>
-            </div>
-          </div>
+			</script>
+			<div class="wow bounceIn" style="animation-delay: 0.5s; animation-name: fadeIn;">
+				<!--<a class="button button-header" onclick="bigger();" target="_sub" style="font-family:삼겹살300; color:white;">자세히 보기</a>-->
+			</div>
+			</div>
+		</div>
+		
+		
     </div>
   </section>
   <!--================ Schedule section End =================-->
@@ -482,7 +497,7 @@
 	 
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"style="margin-right:0px; margin-left:auto; ">
-		<div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: jackInTheBox;">
+		<div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
           <div class="text-center card-priceTable" style="box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.7);">
             <div class="priceTable-header">
               <h3 style="font-family:삼겹살300;">사전 예매</h3>
@@ -514,10 +529,12 @@
 		</div>
 		
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"style="margin-right:auto; margin-left:0px;">
-		<div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: jackInTheBox;">
+		<div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
           <div class="text-center card-priceTable" style="box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.7);">
             <div class="priceTable-header">
               <h3 style="font-family:삼겹살300;">현장 예매</h3>
+			  
+			  
               <p style="font-family:삼겹살300;">오프라인에서 직접 구매합니다</p>
               <h1  class="priceTable-price " > 15,000<span>원</span></h1>
             </div>
@@ -553,7 +570,29 @@
   <section class="section-padding--small sponsor-bg">
     <div class="container">
 	
-     
+      <div class="section-intro section-intro-white text-center pb-98px">
+	  <div class="wow bounceIn" style="animation-delay: 0.5; animation-name: fadeIn;">
+	    <p class="section-intro__title" style="font-family:삼겹살300;">「지금 안사면 평생 못살 굿즈들」</p>
+	</div>
+	 <div class="wow bounceIn" style="animation-delay: 0.6s; animation-name: jackInTheBox;">
+        <h2 class="primary-text" style="font-family:삼겹살300; color:white;">굿즈 구매</h2>
+		</div>
+		<img src="img/home/section-style.png" alt="">
+		
+		<div class="row">
+        <br/>
+		<br/>
+      </div>
+	  	 <div class="wow bounceIn" style="animation-delay: 0.3s; animation-name: fadeIn;">
+        <h1 class="sponsor-title mb-5" style="color:white; font-family:삼겹살300;">역시 이런 공연에는 굿즈가 빠질수 없죠!<br/>밑에 있는 버튼을 눌러서 예쁜 굿즈들을 구경해보세요!</h3>
+		</div>
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
+		  
+            
+        </div>
+		<div class="wow bounceIn" style="animation-delay: 0.5s; animation-name: fadeIn;">
+		<a class="button button-header" href="#"  style="font-family:삼겹살300;">굿즈들 보러가기</a>
+		</div>
       </div>
     </div>
 	
@@ -566,6 +605,7 @@
             <a href="https://twitter.com/whitelive_snow" target="_sub"><p style="font-family:삼겹살300; color:#ababab;">Twitter - @whitelive_snow</p>
             <a href="https://pf.kakao.com/_kRDFj" target="_sub"><p style="font-family:삼겹살300; color:#ababab;">플러스친구 - https://pf.kakao.com/_kRDFj</p>
             <a href="mailto:whitesnowlives@gmail.com"><p style="font-family:삼겹살300; color:#ababab;">e-Mail - whitesnowlives@gmail.com</p>
+			<a href="mailto:c5dingb5y@gmail.com" target="_sub"><p style="font-family:삼겹살300; color:#ababab;">사이트 관련 - c5dingb5y@gmail.com</p>
 	   </div>					
     </div>
     <div class="footer-bottom">
